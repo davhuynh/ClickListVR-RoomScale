@@ -42,7 +42,10 @@ public class HandController : MonoBehaviour
 
         if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
         {
-   
+            for (float i = 0; i < 5000; i += Time.deltaTime)
+            {
+                SteamVR_Controller.Input((int)trackedObj.index).TriggerHapticPulse((ushort)Mathf.Lerp(0, 3999, 1000));
+            }
         }
 
         if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
