@@ -151,5 +151,10 @@
                 InitialiseTips();
             }
         }
+
+        public void UpdateListText(string addedProductName)
+        {
+            appMenuText += '\n' + addedProductName + '\n';
+        }
     }
 }

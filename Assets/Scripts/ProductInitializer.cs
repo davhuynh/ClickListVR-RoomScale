@@ -16,7 +16,6 @@ public class ProductInitializer : MonoBehaviour
 
             WWW productImageRight = new WWW("https://www.kroger.com/product/images/large/right/" + upc);
             yield return productImageRight;
-
             Renderer renderer = GetComponent<Renderer>();
             Vector2 productImageFrontDimensions = new Vector2(productImageFront.texture.width, productImageFront.texture.height).normalized;
             Vector2 productImageRightDimensions = new Vector2(productImageRight.texture.width, productImageRight.texture.height).normalized;
