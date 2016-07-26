@@ -92,6 +92,7 @@ GameObject:
   - 224: {fileID: 22498756}
   - 223: {fileID: 22377644}
   - 114: {fileID: 11465552}
+  - 222: {fileID: 22237634}
   m_Layer: 2
   m_Name: TooltipCanvas
   m_TagString: Untagged
@@ -231,7 +232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &154316
 GameObject:
   m_ObjectHideFlags: 1
@@ -719,7 +720,7 @@ MonoBehaviour:
   drawLineFrom: {fileID: 434770}
   drawLineTo: {fileID: 0}
   lineWidth: 0.001
-  fontColor: {r: 1, g: 1, b: 1, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
   containerColor: {r: 0, g: 0, b: 0, a: 1}
   lineColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &11404920
@@ -777,7 +778,7 @@ MonoBehaviour:
   touchpadText: Touchpad
   appMenuText: Grocery List
   tipBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  tipTextColor: {r: 1, g: 1, b: 1, a: 1}
+  tipTextColor: {r: 0, g: 0, b: 0, a: 1}
   tipLineColor: {r: 0, g: 0, b: 0, a: 1}
   trigger: {fileID: 0}
   grip: {fileID: 0}
@@ -1511,6 +1512,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165326}
+--- !u!222 &22237634
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120774}
 --- !u!222 &22238450
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1870,7 +1877,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 30}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22489358
 RectTransform:
